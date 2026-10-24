@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Desk — Your Mac. Folded.</title>
+<meta name="description" content="Desk is the remote desktop app made for iPhone Duo. Fold it like a tiny laptop and your Mac is right there: screen on top, trackpad below.">
+<meta name="theme-color" content="#fbfbfd">
+<meta property="og:title" content="Desk — Your Mac. Folded.">
+<meta property="og:description" content="The remote desktop app made for iPhone Duo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://macdesk.app/">
+<meta property="og:image" content="https://macdesk.app/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><img src="img/icon-256.webp" width="22" height="22" alt=""><span>Desk</span></a>
+    <nav aria-label="Sections">
+      <a href="#poses">Poses</a>
+      <a href="#features">Features</a>
+      <a href="#setup">Setup</a>
+    </nav>
+    <a class="nav-cta" href="https://x.com/rncrosby" target="_blank" rel="noopener">DM for TestFlight</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="eyebrow reveal">Desk</p>
+    <h1 class="reveal">Your Mac. Folded.</h1>
+    <p class="sub reveal">The remote desktop app made for iPhone Duo.</p>
+    <p class="links reveal"><a class="link" href="https://x.com/rncrosby" target="_blank" rel="noopener">DM @rncrosby on X for TestFlight <span aria-hidden="true">›</span></a></p>
+    <div class="hero-media">
+      <img src="img/laptop-mission-control-1800.webp"
+           srcset="img/laptop-mission-control-900.webp 900w, img/laptop-mission-control-1800.webp 1800w"
+           sizes="(max-width: 860px) 100vw, 820px" width="1800" height="1364"
+           alt="Desk on iPhone Duo folded like a laptop, showing Mac Mission Control above a trackpad">
+    </div>
+  </section>
+
+  <section id="poses" class="poses">
+    <h2 class="reveal">One app.<br>Three shapes.</h2>
+    <div class="pose-tabs reveal" role="tablist" aria-label="Poses">
+      <button role="tab" aria-selected="true" data-pose="closed">Closed</button>
+      <button role="tab" aria-selected="false" data-pose="open">Open</button>
+      <button role="tab" aria-selected="false" data-pose="folded">Folded</button>
+    </div>
+    <div class="pose-stage">
+      <figure class="pose is-active" data-pose="closed">
+        <img src="img/closed-desktop-700.webp" srcset="img/closed-desktop-400.webp 400w, img/closed-desktop-700.webp 700w" sizes="(max-width: 600px) 55vw, 280px" width="700" height="976" alt="Closed iPhone Duo showing a Mac desktop full screen" loading="lazy">
+        <figcaption>Closed, your Mac fills the screen.</figcaption>
+      </figure>
+      <figure class="pose" data-pose="open">
+        <img src="img/open-desktop-1600.webp" srcset="img/open-desktop-800.webp 800w, img/open-desktop-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 640px" width="1600" height="1162" alt="Open iPhone Duo showing a Mac desktop full screen with a row of shortcuts below" loading="lazy">
+        <figcaption>Open, the whole Mac with your shortcuts underneath.</figcaption>
+      </figure>
+      <figure class="pose" data-pose="folded">
+        <img src="img/laptop-desktop-1800.webp" srcset="img/laptop-desktop-900.webp 900w, img/laptop-desktop-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 640px" width="1800" height="1364" alt="iPhone Duo folded like a laptop with the Mac above and a trackpad below" loading="lazy">
+        <figcaption>Folded, the Mac on top and a trackpad below.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="switch" class="spot">
+    <h2 class="reveal">A real ⌘-Tab.</h2>
+    <p class="intro reveal">Tap Switch and keep tapping. It stays open until you stop, just like holding Command.</p>
+    <div class="spot-media narrow reveal">
+      <img src="img/closed-app-switcher-700.webp"
+           srcset="img/closed-app-switcher-400.webp 400w, img/closed-app-switcher-700.webp 700w"
+           sizes="(max-width: 600px) 60vw, 300px" width="700" height="976" loading="lazy"
+           alt="Desk on a closed iPhone Duo showing the Mac app switcher with Terminal selected">
+    </div>
+  </section>
+
+  <section class="spot">
+    <h2 class="reveal">Every Mac move.<br>One tap.</h2>
+    <p class="intro reveal">Mission Control, Spotlight and more, one tap away in a shortcut bar you arrange yourself.</p>
+    <div class="spot-media reveal">
+      <img src="img/open-mission-control-1600.webp"
+           srcset="img/open-mission-control-800.webp 800w, img/open-mission-control-1600.webp 1600w"
+           sizes="(max-width: 760px) 100vw, 720px" width="1600" height="1162" loading="lazy"
+           alt="Desk on an open iPhone Duo showing Mac Mission Control with a row of shortcuts below">
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2 class="reveal">Made for thumbs.</h2>
+    <div class="tiles">
+      <article class="tile reveal">
+        <h3>Your shortcuts.</h3>
+        <p>Keys, chords like ⌘⇧4, apps and scripts in a strip you can reorder or tuck away.</p>
+        <div class="chips" aria-hidden="true"><span class="chip blue">Switch</span><span class="chip">esc</span><span class="chip">⌘</span><span class="chip">⇧</span><span class="chip">Spotlight</span></div>
+      </article>
+      <article class="tile reveal">
+        <h3>Snippets.</h3>
+        <p>Saved text you tap to type. Copy on iPhone, paste on the Mac.</p>
+      </article>
+      <article class="tile reveal">
+        <h3>Everywhere you are.</h3>
+        <p>iPhone, iPad and Mac. Your computers and shortcuts sync through iCloud.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="setup" class="setup">
+    <h2 class="reveal">Nothing to install<br>on your Mac.</h2>
+    <ol class="steps">
+      <li class="reveal"><span>1</span><p>Turn on <b>Screen Sharing</b> in System Settings › General › Sharing.</p></li>
+      <li class="reveal"><span>2</span><p>Add your Mac in Desk by name, like <b>Mac-mini.local</b>.</p></li>
+      <li class="reveal"><span>3</span><p>Sign in with your Mac account. Use <b>Tailscale</b> to connect from anywhere.</p></li>
+    </ol>
+  </section>
+
+  <section class="finale">
+    <img class="finale-icon reveal" src="img/icon-256.webp" width="128" height="128" alt="">
+    <h2 class="reveal">Your desk.<br>Anywhere.</h2>
+    <p class="links reveal"><a class="link" href="https://x.com/rncrosby" target="_blank" rel="noopener">DM @rncrosby on X for TestFlight <span aria-hidden="true">›</span></a></p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Screens are simulated. iPhone, iPad, Mac and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+  <p>© 2026 Desk · Made by <a href="https://x.com/rncrosby" target="_blank" rel="noopener">@rncrosby</a></p>
+</footer>
+
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Text fades up as it scrolls in. Device images never move.
+  const items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) items.forEach(el => el.classList.add('in'));
+  else {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+    items.forEach(el => io.observe(el));
+  }
+
+  // Pose tabs crossfade, and advance on their own until someone picks one.
+  const tabs = [...document.querySelectorAll('.pose-tabs button')];
+  const poses = [...document.querySelectorAll('.pose')];
+  let auto = !reduce, i = 0;
+  const show = name => {
+    tabs.forEach(t => t.setAttribute('aria-selected', t.dataset.pose === name));
+    poses.forEach(p => p.classList.toggle('is-active', p.dataset.pose === name));
+  };
+  tabs.forEach((t, n) => t.addEventListener('click', () => { auto = false; i = n; show(t.dataset.pose); }));
+  setInterval(() => { if (auto && !document.hidden) { i = (i + 1) % tabs.length; show(tabs[i].dataset.pose); } }, 4200);
+
+  const nav = document.querySelector('.nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 8), { passive: true });
+</script>
+</body>
+</html>
