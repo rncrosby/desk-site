@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Desk Privacy Policy</title>
+<meta name="description" content="How Desk handles your data: no accounts, no servers, no tracking. Everything stays on your devices and in your iCloud.">
+<meta name="theme-color" content="#fbfbfd">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .doc { max-width: 680px; margin: 0 auto; padding: calc(44px + 56px) var(--gutter) 80px; text-align: left; }
+  .doc h1 { font-size: clamp(34px, 5vw, 48px); margin-bottom: 6px; }
+  .doc .date { color: var(--ink-3); font-size: 15px; margin-bottom: 40px; }
+  .doc h2 { font-size: 22px; margin: 40px 0 10px; }
+  .doc p, .doc li { font-size: 17px; line-height: 1.55; color: #3a3a3c; }
+  .doc p + p { margin-top: 12px; }
+  .doc ul { padding-left: 22px; margin-top: 8px; }
+  .doc li + li { margin-top: 6px; }
+  .doc a { color: var(--blue); }
+  .doc a:hover { text-decoration: underline; }
+  .summary { background: var(--card); border-radius: 20px; padding: 22px 24px; margin-bottom: 8px; }
+  .summary p { color: var(--ink); font-weight: 500; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/"><img src="img/icon-256.webp" width="22" height="22" alt=""><span>Desk</span></a>
+    <nav aria-label="Sections">
+      <a href="/#poses">Poses</a>
+      <a href="/#features">Features</a>
+      <a href="/#privacy">Privacy</a>
+      <a href="/#setup">Setup</a>
+    </nav>
+    <a class="nav-cta" href="https://x.com/rncrosby" target="_blank" rel="noopener">DM for TestFlight</a>
+  </div>
+</header>
+
+<main class="doc">
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective October 25, 2026</p>
+
+  <div class="summary">
+    <p>Desk has no accounts, no servers and no analytics. It connects your device directly to computers you choose. Your data lives on your devices and, if you use iCloud, in your iCloud account. Nobody at Desk can see it.</p>
+  </div>
+
+  <h2>What Desk stores</h2>
+  <p>Desk keeps the information you give it so it can connect to your computers and work the way you set it up:</p>
+  <ul>
+    <li><b>Computers</b>: the names, addresses, ports and user names you enter, and when you last connected.</li>
+    <li><b>Passwords</b> for those computers, if you choose to save them. They are stored in the device's Keychain, never in a plain file.</li>
+    <li><b>Snippets</b>: text you save to type later. A snippet you mark as secret is hidden on screen.</li>
+    <li><b>Shortcut bar</b> layout and launch items.</li>
+    <li><b>Skills</b> made with Ask Desk: the steps you recorded and the on-screen labels they point at, such as the name of a button. Snippets used in a skill are stored by reference, so a secret snippet's text never lands in a skill.</li>
+    <li><b>Settings</b>, such as whether the shortcut bar is collapsed.</li>
+  </ul>
+  <p>All of this stays on your device. Desk has no server and no account system, so none of it is ever sent to us.</p>
+
+  <h2>iCloud</h2>
+  <p>So your setup follows you between your iPhone, iPad and Mac, Desk syncs computers, snippets, the shortcut bar and skills through iCloud's key-value storage, and saved passwords through iCloud Keychain. This uses your own Apple Account and Apple's encryption. We cannot read it. Turning off iCloud for Desk in your device settings keeps everything on that device only.</p>
+
+  <h2>Connections to your computers</h2>
+  <p>Desk talks to the computers you add using VNC, the protocol behind macOS Screen Sharing. The connection runs directly between your device and that computer, or through a VPN you set up such as Tailscale. What you see on screen, what you type and where you click travel over that connection and nowhere else.</p>
+  <p>VNC itself does not encrypt screen contents. macOS Screen Sharing protects your password when you sign in, but for the session itself use a network you trust or a VPN.</p>
+  <p>With your permission, Desk looks for computers on your local network that advertise Screen Sharing (Bonjour) so you can add them with a tap. That search never leaves your network.</p>
+
+  <h2>Ask Desk</h2>
+  <p>Ask Desk reads the remote screen to carry out requests: it takes a picture of the remote screen and finds the text on it using Apple's Vision framework, then plans with Apple's on-device Foundation Models. This happens on your device. Screenshots and the text found on them are not stored after the request finishes, except for the on-screen labels saved in a skill you record.</p>
+  <p>Current versions of Desk use only the on-device model. If a future version offers Apple's Private Cloud Compute for longer tasks, it will be a choice you turn on, clearly labelled, and this policy will be updated first.</p>
+  <p>Requests you make through Siri or Shortcuts are handled by Apple's systems under Apple's privacy policy before they reach Desk, and by Desk on your device after that.</p>
+
+  <h2>Widgets</h2>
+  <p>The Home Screen widgets read your list of computers from Desk's storage on the device to show them. They do not connect to anything.</p>
+
+  <h2>What Desk does not do</h2>
+  <ul>
+    <li>No analytics, crash reporting or advertising frameworks.</li>
+    <li>No tracking across apps or websites, and no advertising identifier.</li>
+    <li>No accounts, sign-ins or email addresses.</li>
+    <li>No data sold or shared with anyone.</li>
+  </ul>
+  <p>Desk's App Store privacy label is "Data Not Collected". The only third-party code in the app is RoyalVNCKit, an open-source VNC library that runs entirely on your device.</p>
+
+  <h2>This website</h2>
+  <p>macdesk.app is a static site hosted by GitHub Pages. It sets no cookies and runs no analytics. GitHub may record standard server logs, such as your IP address, when the page loads; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</p>
+
+  <h2>Children</h2>
+  <p>Desk is a utility for controlling your own computers and is not directed at children under 13. It collects no personal information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new effective date. Changes that affect how your data is handled will be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy in Desk: message <a href="https://x.com/rncrosby" target="_blank" rel="noopener">@rncrosby on X</a>.</p>
+</main>
+
+<footer class="foot">
+  <p>iPhone, iPad, Mac and macOS are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+  <p>© 2026 Robert Crosby · <a href="/privacy">Privacy Policy</a> · Made by <a href="https://x.com/rncrosby" target="_blank" rel="noopener">@rncrosby</a></p>
+</footer>
+
+<script>
+  const nav = document.querySelector('.nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 8), { passive: true });
+</script>
+</body>
+</html>
